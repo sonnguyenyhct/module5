@@ -1,0 +1,20 @@
+<h2>Delete Book</h2>
+<form (ngSubmit)="deleteBook(id)">
+  <table>
+    <tr>
+      <td>Name :</td>
+      <td>{{book.title}}</td>
+    </tr>
+    <tr>
+      <td>Price :</td>
+      <td>{{book.author}}</td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td>{{book.description}}</td>
+    </tr>
+    <tr>
+      <td><button>Delete</button></td>
+    </tr>
+  </table>
+</form>
