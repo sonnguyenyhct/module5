@@ -31,7 +31,9 @@ export class EditBookComponent implements OnInit {
   }
   // tslint:disable-next-line:typedef
   editBook(id: number){
-    this.bookService.editBook(id, this.book).subscribe();
+    this.bookService.editBook(id, this.book).subscribe(() => {
+      this.router.navigate(['/list-book']);
+    });
 
   }
 }
